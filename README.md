@@ -33,4 +33,4 @@ https://user-images.githubusercontent.com/100835617/161777603-8e9c65c9-75fe-4cfa
 
 ⑤保存したpdfをpythonライブラリのpythoncomとwin32com.clientで、指定したアドレスに自動でメールを送信する。
 
-※
+※デモ動画では、テスト用のメールアドレスに送信してますが、実際は担任の先生のメールアドレスを登録します。

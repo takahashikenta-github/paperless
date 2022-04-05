@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/style.css">
+    <link rel="stylesheet" href="../static/css/authorized_absence.css">
+    <title>公欠願書</title>
+</head>
+<body>
+    <section class="page">
+        <div class="head">    
+            <div class="head1">
+                <h3>申請日 ： {{year_now}}年 {{month_now}}月 {{day_now}}日 ({{week}})</h3>
+            </div>
+            <div class="head2">
+                <h3>名古屋工学院専門学校　校長殿</h3>
+            </div>
+            <h1 class="logo">公欠願書</h1>
+            <div class="head3">
+                <h3>{{hostclassname}}</h3>
+                <h3>氏名 ： {{hostname}}</h3>
+            </div>
+        </div>
+        <form action="/submit/authorized_absence" method="POST">
+            <div class="main">
+                <p>下記の理由のため、必要欠席期間を公欠とし、出席扱いとして頂きますよう許可をお願いしいたします。</p>
+                <p style="text-align: center;">記</p>
+                <div class="mainflexbox">
+                    <table border="1" style="border-collapse: collapse">
+                        <tr>
+                            <td style="text-align: center;" rowspan="6"><h3>欠席・欠課の理由</h3></td>
+                            <td style="text-align: center;"><h3>弔事</h3></td>
+                            <td style="font-size : 19px;"><input type="checkbox" name="reason">父母 <input type="checkbox" name="reason">祖父母 <input type="checkbox" name="reason">兄弟姉妹 <input type="checkbox" name="reason">曾祖父母 <input type="checkbox" name="reason">伯(叔)父 <br> <input type="checkbox" name="reason">伯(叔)母　の葬儀　/　<input type="checkbox" name="reason">父母の法事</td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: center;"><h3>慶事</h3></td>
+                            <td style="font-size : 19px;">本人・2親等以内　<input type="text" size="10">　の結婚式</td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: center;"><h3>国家試験</h3></td>
+                            <td style="font-size : 19px;">試験名称 ： <input type="text" size="30"></td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: center;"><h3>学校伝染病</h3></td>
+                            <td style="font-size : 19px;"><input type="checkbox" name="reason">第一種<input type="checkbox" name="reason">第二種<input type="checkbox" name="reason">第三種<br>病気の名称 ： <input type="text" size="30"></td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: center;" rowspan="2"><h3>その他</h3></td>
+                            <td style="font-size : 19px;"><textarea class="comment" name="comment" rows="2"></textarea ></td>
+                        </tr>
+                        <tr>
+                            <td style="font-size : 19px;"><input type="checkbox" name="reason">自動車学校の修了検定(仮免)<input type="checkbox" name="reason">卒業検定[各1回のみ]<br><input type="checkbox" name="reason">運転免許試験場の試験[1回のみ]</td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: center;"><h3>実施日時</h3></td>
+                            <td colspan="2">
+                                <select name="example">
+                                    <option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7</option><option>8</option><option>9</option><option>10</option><option>11</option><option>12</option>
+                                </select> 月 
+                                <select name="example">
+                                    <option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7</option><option>8</option><option>9</option><option>10</option><option>11</option><option>12</option><option>13</option><option>14</option><option>15</option><option>16</option><option>17</option><option>18</option><option>19</option><option>20</option>
+                                    <option>21</option><option>22</option><option>23</option><option>24</option><option>25</option><option>26</option><option>27</option><option>28</option><option>29</option><option>30</option><option>31</option>
+                                </select> 日 
+                                <select name="example">
+                                    <option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7</option><option>8</option><option>9</option><option>10</option><option>11</option><option>12</option><option>13</option><option>14</option><option>15</option><option>16</option><option>17</option><option>18</option><option>19</option><option>20</option><option>21</option><option>22</option><option>23</option><option>24</option>
+                                </select> 時 
+                                <select name="example">
+                                    <option>0</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7</option><option>8</option><option>9</option><option>10</option><option>11</option><option>12</option><option>13</option><option>14</option><option>15</option><option>16</option><option>17</option><option>18</option><option>19</option><option>20</option>
+                                    <option>21</option><option>22</option><option>23</option><option>24</option><option>25</option><option>26</option><option>27</option><option>28</option><option>29</option><option>30</option><option>31</option><option>32</option><option>33</option><option>34</option><option>35</option><option>36</option><option>37</option><option>38</option><option>39</option><option>40</option>
+                                    <option>41</option><option>42</option><option>43</option><option>44</option><option>45</option><option>46</option><option>47</option><option>48</option><option>49</option><option>50</option><option>51</option><option>52</option><option>53</option><option>54</option><option>55</option><option>56</option><option>57</option><option>58</option><option>59</option>
+                                </select> 分 ～ 
+                                <select name="example">
+                                    <option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7</option><option>8</option><option>9</option><option>10</option><option>11</option><option>12</option>
+                                </select> 月 
+                                <select name="example">
+                                    <option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7</option><option>8</option><option>9</option><option>10</option><option>11</option><option>12</option><option>13</option><option>14</option><option>15</option><option>16</option><option>17</option><option>18</option><option>19</option><option>20</option>
+                                    <option>21</option><option>22</option><option>23</option><option>24</option><option>25</option><option>26</option><option>27</option><option>28</option><option>29</option><option>30</option><option>31</option>
+                                </select> 日 
+                                <select name="example">
+                                    <option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7</option><option>8</option><option>9</option><option>10</option><option>11</option><option>12</option><option>13</option><option>14</option><option>15</option><option>16</option><option>17</option><option>18</option><option>19</option><option>20</option><option>21</option><option>22</option><option>23</option><option>24</option>
+                                </select> 時 
+                                <select name="example">
+                                    <option>0</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7</option><option>8</option><option>9</option><option>10</option><option>11</option><option>12</option><option>13</option><option>14</option><option>15</option><option>16</option><option>17</option><option>18</option><option>19</option><option>20</option>
+                                    <option>21</option><option>22</option><option>23</option><option>24</option><option>25</option><option>26</option><option>27</option><option>28</option><option>29</option><option>30</option><option>31</option><option>32</option><option>33</option><option>34</option><option>35</option><option>36</option><option>37</option><option>38</option><option>39</option><option>40</option>
+                                    <option>41</option><option>42</option><option>43</option><option>44</option><option>45</option><option>46</option><option>47</option><option>48</option><option>49</option><option>50</option><option>51</option><option>52</option><option>53</option><option>54</option><option>55</option><option>56</option><option>57</option><option>58</option><option>59</option>
+                                </select> 分 
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: center;"><h3>実施場所</h3></td>
+                            <td colspan="2"><textarea class="comment" name="comment" rows="1"></textarea></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="form-button">
+                <input type="submit" id="button" class="button" value="送信"></input>
+            </div>
+        </form>
+        
+    </section>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="../static/js/load.js"></script>
+    <script src="../static/js/script.js"></script>
+</body>
+</html>

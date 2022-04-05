@@ -24,3 +24,13 @@ https://user-images.githubusercontent.com/100835617/161777603-8e9c65c9-75fe-4cfa
 ↓
 
 ③各ページの入力値を埋めたら、"送信"ボタンをクリックします。
+
+↓
+
+④pythonライブラリのpyautoguiにより、現画面をpdfに保存する。
+
+↓
+
+⑤保存したpdfをpythonライブラリのpythoncomとwin32com.clientで、指定したアドレスに自動でメールを送信する。
+
+※

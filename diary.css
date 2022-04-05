@@ -1,0 +1,91 @@
+textarea {
+    resize: none;
+    font-size:20px;
+    font-family: system-ui;
+}
+
+.headflexbox {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1em;
+    padding-top: 2em;
+}
+
+.headflexbox h3 {
+    margin: 20px 60px;
+    border-bottom: 3px solid;
+}
+
+.lesson_comments {
+    margin: 0 2em 1.5em 2em;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: clip;
+}
+
+.mainflexbox_title  {
+    display: flex;
+    justify-content: flex-start;
+    height: 27px;
+}
+
+.title1 {
+    margin: 0;
+    text-align: center;
+    border: 1px solid;
+    background-color: #ffffff;
+    -ms-writing-mode: tb-rl;
+	writing-mode: vertical-rl;
+}
+
+.title2 {
+    margin: 0;
+    text-align: center;
+    border: 1px solid;
+    background-color: #ffffff;
+    width: 50%;
+}
+
+.mainflexbox  {
+    display: flex;
+    justify-content: flex-start;
+    height: 185px;
+}
+
+.mainflexbox h3 {
+    margin: 0;
+    border: 1px solid;
+    background-color: #ffffff;
+    -ms-writing-mode: tb-rl;
+	writing-mode: vertical-rl;
+}
+
+.impressions {
+    margin: 0 2em 0 2em;
+}
+
+.impressions h3 {
+    margin: 0 0 5px 0;
+}
+
+.impression {
+    width: 100%;
+}
+
+.comment {
+    width:50%;
+}
+
+.form-button {
+    margin: 0 4em 0 2em;
+    text-align: end;
+}
+
+.form-button input{
+    color: #ffffff;
+    background-color: #005e7a;
+    margin-top: 20px;
+    height: 40px;
+    width: 120px;
+    transition: 0.2s;
+}

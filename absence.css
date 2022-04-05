@@ -1,0 +1,47 @@
+textarea {
+    resize: none;
+    font-size:20px;
+    font-family: system-ui;
+}
+
+.head, .main{
+   margin: 0 2em; 
+}
+.head1 {
+    text-align: right;
+}
+
+.head2 {
+    text-align: left;
+}
+
+.head3 {
+    text-align: right;
+}
+
+.main p {
+    font-size: 18px;
+}
+
+select {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.reason {
+    width: 100%;
+}
+
+.form-button {
+    margin: 0 4em 0 2em;
+    text-align: end;
+}
+
+.form-button input{
+    color: #ffffff;
+    background-color: #005e7a;
+    margin-top: 20px;
+    height: 40px;
+    width: 120px;
+    transition: 0.2s;
+}

@@ -1,0 +1,45 @@
+p {
+    font-size: 1.5em;
+}
+
+.account{
+    text-align: center;
+    margin: 0;
+    padding: 1.5em 1em 0 1em;
+    font-weight: bold;
+}
+
+.discription{
+    text-align: center;
+	display: block;
+    margin: 16px auto;
+    padding: 0 1em;
+}
+
+.how .discription{
+    text-align: left;
+	display: inline-block;
+}
+
+.select-wrapper {
+    background: #f5f5f5;
+    margin: 0 auto 3em auto;
+    padding: 2em 1em;
+    max-width: 370px;
+}
+
+.select-wrapper input{
+    background-color: #f5f5f5;
+    border: none;
+    border-bottom: 5px solid #252525;
+    color: #252525;
+    font-size: 22px;
+    font-weight: 900;
+    text-align: left;
+    height: 50px;
+    width: 100%;
+}
+
+.select-button {
+    margin: 0 auto 1.8em auto;    
+}

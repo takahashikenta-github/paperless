@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/style.css">
+    <link rel="stylesheet" href="../static/css/home.css">
+    <title>ホーム</title>
+</head>
+<body>
+    <h1 class="logo">名古屋工学院専門学校</h1>
+    <div class="account">
+        <p>{{hostclassname}}   {{hostname}}   でログインしています。</p>
+    </div>
+    <div class="discription">
+        <p class="how">①やりたい作業を下記からクリックしてください。</br>
+           ②ページが移動したら、入力項目を埋めてください</br>
+           ③ "送信" ボタンをクリックし、触らないでください。</p>
+    </div>
+    <div class="select-wrapper">
+        <form action="/diary" method="POST">
+            <div class="select-button">
+                <input type="submit" class="button" value="＞＞ 日誌"></input>
+            </div>
+        </form>
+        <form action="/absence" method="POST">
+            <div class="select-button">
+                <input type="submit" class="button" value="＞＞ 欠席・欠課・遅刻　届"></input>
+            </div>
+        </form>
+        <form action="/authorized_absence" method="POST">
+            <div class="select-button">
+                <input type="submit" class="button" value="＞＞ 公欠願書"></input>
+            </div>
+        </form>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="../static/js/script.js"></script>
+</body>
+</html>

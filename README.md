@@ -2,12 +2,12 @@
 学校内の書類でのやる取りをペーパーレス化にしたWebアプリケーション。
 
 ※使用した言語
-　
- バックエンド：python
- 
- フロントエンド：HTML CSS JavaScript
- 
- フレームワーク：flask
+
+バックエンド：python
+
+フロントエンド：HTML CSS JavaScript
+
+フレームワーク：flask
 
 下記にデモ動画を掲載しました。
 

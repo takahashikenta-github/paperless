@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/style.css">
+    <link rel="stylesheet" href="../static/css/index.css">
+    <title>ログイン</title>
+</head>
+<body>
+  <h1 class="logo">名古屋工学院専門学校</h1>
+        <div class="form-wrapper">
+          <h2>サインイン</h2>
+          <form action="/home" method="POST" autocomplete="off"> 
+            <div class="form-input">
+              <input type="text" name="loginname" placeholder="名前"></input>
+            </div>
+            <div class="form-input">
+              <input type="password" name="loginpassword" placeholder="学籍番号"></input>
+            </div>
+            <div class="form-button">
+              <input type="submit" class="button" value="サインイン"></input>
+            </div>
+          </form>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script src="../static/js/script.js"></script>
+</body>
+</html>
